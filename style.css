@@ -1,0 +1,38 @@
+@font-face {
+  font-family: modern-dos;
+  src: url("ModernDOS9x16.ttf");
+}
+
+:root, pre {
+  background-color: black;
+  color: white;
+  font-family: modern-dos;
+}
+
+#cursor {
+  display: inline-block;
+  background-color: white;
+  width: 7.5px;
+  height: 16px;
+  animation: cursor 1s step-end infinite;
+  translate: 0px 2.5px;
+}
+
+#answer {
+  margin-top: 0;
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+.site {
+  color: #0175e5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
