@@ -16,6 +16,7 @@ function set_opening() {
   while (secs > 59) {
     mins++
     calc_time -= 60
+    secs -= 60
   }
   secs = calc_time
   const opening_text = ` _   _                       _       ____  _ _       
