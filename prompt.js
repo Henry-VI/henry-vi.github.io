@@ -18,6 +18,7 @@ document.onkeydown = (e) => {
 exit          Returns to home.
 help          Shows this page.
 ls            Lists all links on the website.
+reboot        Reloads the page.
       `
     } else if (current_prompt == "clear") {
       answer.innerText = ""
@@ -31,6 +32,8 @@ ls            Lists all links on the website.
       window.location.href = "/"
     } else if (current_prompt == "sudo rm -rf /" || current_prompt == "rm -rf /" || current_prompt == "rm -rf --no-preserve-root /" || current_prompt == "sudo rm -rf --no-preserve-root /") {
       window.location.replace("about:blank")
+    } else if (current_prompt == "reboot") {
+      window.location.reload()
     } else {
       answer.innerText = `sh: ${current_prompt}: command not found.`
     }
