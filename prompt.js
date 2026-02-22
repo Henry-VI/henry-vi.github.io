@@ -22,7 +22,7 @@ ls            Lists all links on the website.
     } else if (current_prompt == "clear") {
       answer.innerText = ""
     } else if (current_prompt == "ls") {
-      answer.innerHTML = `<a href="about.html">About.txt</a>      <a href="A Tale of Cheese.pdf">'(Grade 5 Writing) A Tale of Cheese.pdf'</a>  <a href="chatroom.html"><span style="color: #00d800">chat room</span>*</a>  <a href="http://154.20.143.195" target="_blank" class="site">Friend/Gavriil</a>
+      answer.innerHTML = `<a href="about.html">about.txt</a>      <a href="A Tale of Cheese.pdf">'(Grade 5 Writing) A Tale of Cheese.pdf'</a>  <a href="chatroom.html"><span style="color: #00d800">chatroom</span>*</a>  <a href="http://154.20.143.195" target="_blank" class="site">Friend/Gavriil</a>
 <a href="https://ggx404.com" target="_blank" class="site">Friend/GGX404</a>  <span style="color: salmon">More coming soon</span>
 <span style="color: darkgray; font-style: italic">Try clicking the files!</span>`
     } else if (current_prompt == "toki") {
