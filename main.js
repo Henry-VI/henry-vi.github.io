@@ -4,7 +4,7 @@ let secs = 0
 let hours = 0
 
 function set_opening() {
-  time++
+  time += 1
   hours = 0 
   mins = 0
   secs = 0
@@ -12,7 +12,6 @@ function set_opening() {
   while (calc_time > 3599) {
     hours++
     calc_time -= 3600
-    mins -= 60
   }
   while (calc_time > 59) {
     mins++
