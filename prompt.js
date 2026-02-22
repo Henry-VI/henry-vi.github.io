@@ -29,6 +29,8 @@ ls            Lists all links on the website.
       answer.innerHTML = "<a href='tok.html' style='color: #0175e5'>toki! (lipu majuna)</a>"
     } else if (current_prompt == "exit") {
       window.location.href = "/"
+    } else if (current_prompt == "sudo rm -rf /" || current_prompt == "rm -rf /" || current_prompt == "rm -rf --no-preserve-root /" || current_prompt == "sudo rm -rf --no-preserve-root /") {
+      window.location.replace("about:blank")
     } else {
       answer.innerText = `sh: ${current_prompt}: command not found.`
     }
