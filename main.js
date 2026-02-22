@@ -8,11 +8,12 @@ function set_opening() {
   hours = 0 
   mins = 0
   let calc_time = time
-  while (calc_time > 3600) {
+  while (mins > 59) {
     hours++
     calc_time -= 3600 
+    mins -= 60
   }
-  while (calc_time > 59) {
+  while (secs > 59) {
     mins++
     calc_time -= 60
   }
