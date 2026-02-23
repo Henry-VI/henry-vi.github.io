@@ -37,6 +37,8 @@ reboot         Reloads the page.
       window.location.reload()
     } else if (current_prompt.slice(0,4) == "echo") {
       answer.innerText = current_prompt.slice(5)
+    } else if (current_prompt == "home.sh" || current_prompt == "./home.sh") {
+      window.location.href = "/"
     } else {
       answer.innerText = `sh: ${current_prompt}: command not found.`
     }
