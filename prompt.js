@@ -24,8 +24,8 @@ reboot         Reloads the page.
     } else if (current_prompt == "clear") {
       answer.innerText = ""
     } else if (current_prompt == "ls") {
-      answer.innerHTML = `<a href="about.html">about.txt</a>      <a href="chatroom.html"><span style="color: #00d800">chatroom</span>*</a>                                 <a href="https://ggx404.com" target="_blank" class="site">Webring/Chase</a>    <a href="https://www.astro3000.dev" target="_blank" class="site">Webring/William</a>
-<a href="/"><span style="color: #00d800">home.sh</span>*</a>       <a href="A Tale of Cheese.pdf">'(Grade 5 Writing) A Tale of Cheese.pdf'</a>  <span style="color: salmon">More coming soon</span>
+      answer.innerHTML = `<a href="about.html">about.txt</a>                                 <a href="chatroom.html"><span style="color: #00d800">chatroom</span>*</a>        <a href="/"><span style="color: #00d800">home.sh</span>*</a>
+<a href="A Tale of Cheese.pdf">'(Grade 5 Writing) A Tale of Cheese.pdf'</a>  <a href="https://ggx404.com" target="_blank" class="site">Webring/Chase</a>    <a href="https://www.astro3000.dev" target="_blank" class="site">Webring/William</a>
 <span style="color: darkgray; font-style: italic">Try clicking the files!</span>`
     } else if (current_prompt == "toki") {
       answer.innerHTML = "<a href='tok.html' style='color: #0175e5'>toki! (lipu majuna)</a>"
