@@ -3,6 +3,9 @@ let mins = 0
 let secs = 0
 let hours = 0
 
+let splash_text = ["o toki e toki pona!", "sudo rm -rf --no-preserve-root /", "i use arch btw", "open source!", ""]
+
+
 function set_opening() {
   time += 1
   hours = 0 
