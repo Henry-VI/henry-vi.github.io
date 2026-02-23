@@ -14,11 +14,12 @@ document.onkeydown = (e) => {
     const current_prompt = document.getElementById("prompt").textContent.slice(8)
     document.getElementById("prompt").textContent = "sh-5.3$ "
     if (current_prompt == "help") {
-      answer.innerText = `clear         Clears answer.
-exit          Returns to home.
-help          Shows this page.
-ls            Lists all links on the website.
-reboot        Reloads the page.
+      answer.innerText = `clear          Clears answer.
+echo [string]  Prints a string.
+exit           Returns to home.
+help           Shows this page.
+ls             Lists all links on the website.
+reboot         Reloads the page.
       `
     } else if (current_prompt == "clear") {
       answer.innerText = ""
@@ -34,6 +35,8 @@ reboot        Reloads the page.
       window.location.replace("about:blank")
     } else if (current_prompt == "reboot") {
       window.location.reload()
+    } else if (current_prompt.slice(0,4) == "echo") {
+      answer.innerText = current_prompt.slice(5)
     } else {
       answer.innerText = `sh: ${current_prompt}: command not found.`
     }
