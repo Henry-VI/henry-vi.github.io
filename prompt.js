@@ -14,7 +14,8 @@ document.onkeydown = (e) => {
     const current_prompt = document.getElementById("prompt").textContent.slice(8)
     document.getElementById("prompt").textContent = "sh-5.3$ "
     if (current_prompt == "help") {
-      answer.innerText = `clear          Clears answer.
+      answer.innerText = `cat [file]     Open a link from ls.
+clear          Clears answer.
 echo [string]  Prints a string.
 exit           Returns to home.
 help           Shows this page.
@@ -39,6 +40,36 @@ reboot         Reloads the page.
       answer.innerText = current_prompt.slice(5)
     } else if (current_prompt == "home.sh" || current_prompt == "./home.sh") {
       window.location.href = "/"
+    } else if (current_prompt.slice(0,3) == "cat") {
+      switch (current_prompt.slice(4).toLowerCase()) {
+        case "home.sh":
+          window.location.href = "/"
+          break;
+        case "about.txt":
+          window.location.href = "about.html"
+          break;
+        case "'(grade 5 writing) a tale of cheese.pdf'":
+          window.location.href = "A Tale of Cheese.pdf"
+          break;
+        case "guestbook.html":
+          window.location.href = "guestbook.html"
+          break;
+        case "blog.md":
+          window.location.href = "blog.html"
+          break;
+        case "no-ai.rtf":
+          window.location.href = "no-ai.html"
+          break;
+        case "webring/chase":
+          window.location.href = "https://ggx404.com"
+          break;
+        case "webring/william":
+          window.location.href = "https://www.astro3000.dev"
+          break;
+        default:
+          answer.innerText = `cat: ${current_prompt.slice(4).split()[0]}: No such file or directory`
+          break;
+      }
     } else {
       answer.innerText = `sh: ${current_prompt}: command not found.`
     }
