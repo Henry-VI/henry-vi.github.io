@@ -3,7 +3,7 @@ let mins = 0
 let secs = 0
 let hours = 0
 
-let splash_text = ["o toki e toki pona!", "sudo rm -rf --no-preserve-root /", "i use arch btw", "open source!", ""]
+let splash_text = ["o toki e toki pona!", "sudo rm -rf --no-preserve-root /", "i use arch btw", "open source!", "rabble rabble privacy rabble rabble", "something something digital footprint something something", "o kalamawal!"]
 
 
 function set_opening() {
