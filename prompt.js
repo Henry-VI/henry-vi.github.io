@@ -86,6 +86,7 @@ reboot            Reloads the page.
           break;
         case "skelebones":
           answer.innerHTML = "<img src='https://blob.gifcities.org/gifcities/25GEJMY4IWCJRCUAOTLD537VG7SBNK36.gif'>"
+          break;
         default:
           answer.innerHTML = "nope"
           break;
