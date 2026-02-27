@@ -79,11 +79,13 @@ reboot            Reloads the page.
           answer.innerHTML = "<marquee>whee</marquee>"
           break;
         case "gavriil":
-          answer.innerHTML = "\"new server hardware\""
+          answer.innerHTML = "\"wajnew-surpi8-rumsyV\""
           break;
         case "indieweb":
           answer.innerHTML = "<marquee direction='right'>I love the indie web!!!</marquee><br><img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'> RAAAAAAH <img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'><br><a href='https://henryvaniersel.ca' target='_blank'><img src='button.gif' width=100 alt='button for henryvaniersel.ca'></a>"
           break;
+        case "skelebones":
+          answer.innerHTML = "<img src='https://blob.gifcities.org/gifcities/25GEJMY4IWCJRCUAOTLD537VG7SBNK36.gif'>"
         default:
           answer.innerHTML = "nope"
           break;
