@@ -14,13 +14,14 @@ document.onkeydown = (e) => {
     const current_prompt = document.getElementById("prompt").textContent.slice(8)
     document.getElementById("prompt").textContent = "sh-5.3$ "
     if (current_prompt == "help") {
-      answer.innerText = `cat [file]     Open a link from ls.
-clear          Clears answer.
-echo [string]  Prints a string.
-exit           Returns to home.
-help           Shows this page.
-ls             Lists all links on the website.
-reboot         Reloads the page.
+      answer.innerText = `cat [file]        Open a link from ls.
+cheatcode [code]  Enter a cheat code.
+clear             Clears answer.
+echo [string]     Prints a string.
+exit              Returns to home.
+help              Shows this page.
+ls                Lists all links on the website.
+reboot            Reloads the page.
       `
     } else if (current_prompt == "clear") {
       answer.innerText = ""
@@ -70,6 +71,21 @@ reboot         Reloads the page.
           window.location.href = "notes.html"
         default:
           answer.innerText = `cat: ${current_prompt.slice(4).split()[0]}: No such file or directory`
+          break;
+      }
+    } else if (current_prompt.slice(0,9) == "cheatcode") {
+      switch (current_prompt.slice(10).toLowerCase()) {
+        case "marquee":
+          answer.innerHTML = "<marquee>whee</marquee>"
+          break;
+        case "gavriil":
+          answer.innerHTML = "\"new server hardware\""
+          break;
+        case "indieweb":
+          answer.innerHTML = "<marquee direction='right'>I love the indie web!!!</marquee><br><img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'> RAAAAAAH <img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'><br><a href='https://henryvaniersel.ca' target='_blank'><img src='button.gif' width=100 alt='button for henryvaniersel.ca'></a>"
+          break;
+        default:
+          answer.innerHTML = "nope"
           break;
       }
     } else {
