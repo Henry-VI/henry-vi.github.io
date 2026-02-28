@@ -75,6 +75,13 @@ reboot            Reloads the page.
       }
     } else if (current_prompt.slice(0,9) == "cheatcode") {
       switch (current_prompt.slice(10).toLowerCase()) {
+        case "codes":
+          answer.innerHTML = `codes
+gavriil
+indieweb
+marquee
+skelebones
+tokipona`
         case "marquee":
           answer.innerHTML = "<marquee>whee</marquee>"
           break;
