@@ -87,6 +87,14 @@ reboot            Reloads the page.
         case "skelebones":
           answer.innerHTML = "<img src='https://blob.gifcities.org/gifcities/25GEJMY4IWCJRCUAOTLD537VG7SBNK36.gif'>"
           break;
+        case "tokipona":
+          document.getElementById("para").innerHTML = `toki a! o kama pona tawa lipu mi.
+sina wile sona mute la sina ken alasa toki e "ls" anu "help" lon poki toki anpa.
+<b>ilo suli taso. sina kepeken ilo lili la lipu li kama pakala.
+o kepeken taso e ilo suli.</b>`
+          document.getElementById("cubesub").innerText = "leko tawa"
+          answer.innerText = "pona a!"
+          break;
         default:
           answer.innerHTML = "nope"
           break;
