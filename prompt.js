@@ -82,6 +82,7 @@ indieweb
 marquee
 skelebones
 tokipona`
+          break;
         case "marquee":
           answer.innerHTML = "<marquee>whee</marquee>"
           break;
