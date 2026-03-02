@@ -5,7 +5,7 @@ let hours = 0
 
 let splash_text = ["o toki e toki pona!", "sudo rm -rf --no-preserve-root /", "i use arch btw", "open source!", "rabble rabble privacy rabble rabble", "something something digital footprint something something", "o kalamawala!", "also try dottwav.neocities.org!", "#1 death hater", "10 PRINT \"HELLO\"<br>20 GOTO 10", "Elon Musk has a net worth of over $800,000,000,000.", "I ♥ text art"]
 
-document.getElementById("splash").innerHTML = splash_text[Math.floor(Math.random()*splash_text.length)]
+document.getElementById("splash_text").innerHTML = splash_text[Math.floor(Math.random()*splash_text.length)]
 
 function set_opening() {
   time += 1
