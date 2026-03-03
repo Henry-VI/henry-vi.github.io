@@ -3,7 +3,7 @@ let mins = 0
 let secs = 0
 let hours = 0
 
-let splash_text = ["o toki e toki pona!", "sudo rm -rf --no-preserve-root /", "i use arch btw", "open source!", "rabble rabble privacy rabble rabble", "something something digital footprint something something", "o kalamawala!", "also try dottwav.neocities.org!", "#1 death hater", "10 PRINT \"HELLO\"<br>20 GOTO 10", "Elon Musk has a net worth of over $800,000,000,000.", "I ♥ text art"]
+let splash_text = ["o toki e toki pona!", "sudo rm -rf --no-preserve-root /", "i use arch btw", "open source!", "rabble rabble privacy rabble rabble", "something something digital footprint something something", "o kalamawala!", "also try dottwav.neocities.org!", "#1 death hater", "10 PRINT \"HELLO\"<br>20 GOTO 10", "Elon Musk has a net worth of over $800,000,000,000.", "I ♥ text art", "release the Epstein files!", "<span style='animation: spin 1s linear infinite;'>spinning pixels</span>", "No AI!", "also try touching grass!", "insert splash text here"]
 
 document.getElementById("splash_text").innerHTML = splash_text[Math.floor(Math.random()*splash_text.length)]
 
