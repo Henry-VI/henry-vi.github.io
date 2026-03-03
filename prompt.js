@@ -43,6 +43,9 @@ reboot            Reloads the page.
       window.location.href = "/"
     } else if (current_prompt.slice(0,3) == "cat") {
       switch (current_prompt.slice(4).toLowerCase()) {
+        case "blog.md":
+          window.location.href = "blog.html"
+          break;
         case "home.sh":
           window.location.href = "/"
           break;
