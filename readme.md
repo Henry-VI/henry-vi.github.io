@@ -1,7 +1,5 @@
 # My Website
 ![AI Code: Nope](https://img.shields.io/badge/AI_Code-Nope-blue)
-;q
-;q
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Henry-VI/henry-vi.github.io)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Henry-VI/henry-vi.github.io)
 ![GitHub top language](https://img.shields.io/github/languages/top/Henry-VI/henry-vi.github.io)
