@@ -58,3 +58,9 @@ img {
     transform: rotate(360deg);
   }
 }
+
+.note {
+  background-color: #1e1e1e;
+  margin: .25em 0;
+  padding: 12px;
+}
