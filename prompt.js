@@ -94,7 +94,7 @@ tokipona`
           answer.innerHTML = "<marquee>whee</marquee>"
           break;
         case "gavriil":
-          answer.innerHTML = "\"wheres your IBM PC BIOS specifications manual?\""
+          answer.innerHTML = "\"status update status update\""
           break;
         case "indieweb":
           answer.innerHTML = "<marquee direction='right'>I love the indie web!!!</marquee><br><img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'> RAAAAAAH <img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'><br><a href='https://henryvaniersel.ca' target='_blank'><img src='button.gif' width=100 alt='button for henryvaniersel.ca'></a>"
