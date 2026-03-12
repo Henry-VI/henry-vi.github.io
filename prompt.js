@@ -97,7 +97,7 @@ tokipona`
           answer.innerHTML = "\"status update status update\""
           break;
         case "indieweb":
-          answer.innerHTML = "<marquee direction='right'>I love the indie web!!!</marquee><br><img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'> RAAAAAAH <img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'><br><a href='https://henryvaniersel.ca' target='_blank'><img src='button.gif' width=100 alt='button for henryvaniersel.ca'></a>"
+          answer.innerHTML = "<marquee direction='right'>I love the indie web!!!</marquee><br><img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'> RAAAAAAH <img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'><br><a href='https://henryvaniersel.ca' target='_blank'><img src='button.gif' width=100 alt='button for henryvaniersel.ca'></a><a href='https://dottwav.neocities.org' target='_blank'><img src='https://dottwav.neocities.org/wavspace.png'></a>"
           break;
         case "skelebones":
           answer.innerHTML = "<img src='https://blob.gifcities.org/gifcities/25GEJMY4IWCJRCUAOTLD537VG7SBNK36.gif'>"
