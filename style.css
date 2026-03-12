@@ -64,3 +64,16 @@ img {
   margin: .25em 0;
   padding: 12px;
 }
+
+#fullpage {
+  display: flex;
+}
+
+#notecontainer {
+  width: 49%;
+}
+
+#thoughtstream {
+  width: 49%;
+  margin-left: auto;
+}
