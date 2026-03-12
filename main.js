@@ -3,9 +3,12 @@ let mins = 0
 let secs = 0
 let hours = 0
 
-let splash_text = ["o toki e toki pona!", "sudo rm -rf --no-preserve-root /", "i use arch btw", "open source!", "rabble rabble privacy rabble rabble", "something something digital footprint something something", "o kalamawala!", "also try dottwav.neocities.org!", "#1 death hater", "10 PRINT \"HELLO\"<br>20 GOTO 10", "Elon Musk has a net worth of over $800,000,000,000.", "I ♥ text art", "release the Epstein files!", "<span style='animation: spin 1s linear infinite;'>spinning pixels</span>", "No AI!", "also try touching grass!", "insert splash text here", "war isn't murder, they're call casualties", "Dirty commie rat!", "be more prepared for the next insurrection.", "death to DST!", "I'm a socialist      but like a chill one", "it's a democratic hoax, folks, have you even seen the dow?", "Indie web!", "Hitler was a bad person!", "cheatcode marquee", "null", "whatever you're doing right now is exactly what you'd do under fascism.", "this reminds me of 1984!"]
+let splash_text = ["o toki e toki pona!", "sudo rm -rf --no-preserve-root /", "i use arch btw", "open source!", "rabble rabble privacy rabble rabble", "something something digital footprint something something", "o kalamawala!", "also try dottwav.neocities.org!", "#1 death hater", "10 PRINT \"HELLO\"<br>20 GOTO 10", "Elon Musk has a net worth of over $800,000,000,000.", "I ♥ text art", "release the Epstein files!", "<span style='animation: spin 1s linear infinite; display: inline-block;'>spinning pixels</span>", "No AI!", "also try touching grass!", "insert splash text here", "war isn't murder, they're call casualties", "Dirty commie rat!", "be more prepared for the next insurrection.", "death to DST!", "I'm a socialist      but like a chill one", "it's a democratic hoax, folks, have you even seen the dow?", "Indie web!", "Hitler was a bad person!", "cheatcode marquee", "null", "whatever you're doing right now is exactly what you'd do under fascism.", "this reminds me of 1984!"]
 
-document.getElementById("splash_text").innerHTML = splash_text[Math.floor(Math.random()*splash_text.length)]
+function quote() {
+  document.getElementById("splash_text").innerHTML = splash_text[Math.floor(Math.random()*splash_text.length)]
+}
+quote()
 
 function set_opening() {
   time += 1
