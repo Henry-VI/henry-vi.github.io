@@ -26,8 +26,8 @@ reboot            Reloads the page.
     } else if (current_prompt == "clear") {
       answer.innerText = ""
     } else if (current_prompt == "ls") {
-      answer.innerHTML = `<a href="about.html">about.txt</a>  <a href="blog.html" style="color: salmon;">blog.md</a>    <a href="A Tale of Cheese.pdf">\`(Grade 5 Writing) A Tale of Cheese.pdf'</a>  <a href="guestbook.html"><span style="color: #00d800">guestbook</span>*</a>       <a href="/"><span style="color: #00d800">home.sh</span>*</a>
-<a href="no-ai.html">no-ai.rtf</a>  <a href="notes.html">notes.txt</a>  <a class="site" href="webneighbours.html">Webneighbours/</a>                            <a href="https://ggx404.com" target="_blank" class="site">Webring/Chase</a>    <a href="https://www.astro3000.dev" target="_blank" class="site">Webring/William</a>
+      answer.innerHTML = `<a href="about.html">about.txt</a>  <a href="blog.html" style="color: salmon;">blog.md</a>        <a href="A Tale of Cheese.pdf">\`(Grade 5 Writing) A Tale of Cheese.pdf'</a>  <a href="guestbook.html"><span style="color: #00d800">guestbook</span>*</a>       <a href="/"><span style="color: #00d800">home.sh</span>*</a>         <a href="no-ai.html">no-ai.rtf</a>
+<a href="notes.html">notes.txt</a>  <a href="projects.html">projects.diff</a>  <a class="site" href="webneighbours.html">Webneighbours/</a>                            <a href="https://ggx404.com" target="_blank" class="site">Webring/Chase</a>    <a href="https://www.astro3000.dev" target="_blank" class="site">Webring/William</a>
 <span style="color: darkgray; font-style: italic">Try clicking the files!</span>`
     } else if (current_prompt == "toki") {
       answer.innerHTML = "<a href='tok.html' style='color: #0175e5'>toki! (lipu majuna)</a>"
@@ -76,6 +76,9 @@ reboot            Reloads the page.
         case "webneighbours":
           window.location.href = "webneighbours.html"
           break;
+        case "projects.diff":
+          window.location.href = "projects.html"
+          break;
         default:
           answer.innerText = `cat: ${current_prompt.slice(4).split()[0]}: No such file or directory`
           break;
@@ -94,7 +97,7 @@ tokipona`
           answer.innerHTML = "<marquee>whee</marquee>"
           break;
         case "gavriil":
-          answer.innerHTML = "\"status update status update\""
+          window.location.href = "gavriil.html"
           break;
         case "indieweb":
           answer.innerHTML = "<marquee direction='right'>I love the indie web!!!</marquee><br><img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'> RAAAAAAH <img src='https://web.archive.org/web/20090803200643im_/http://www.geocities.com/SiliconValley/Pines/9258/skull1_anim.gif'><br><a href='https://henryvaniersel.ca' target='_blank'><img src='button.gif' width=100 alt='button for henryvaniersel.ca'></a><a href='https://dottwav.neocities.org' target='_blank'><img src='https://dottwav.neocities.org/wavspace.png'></a>"
