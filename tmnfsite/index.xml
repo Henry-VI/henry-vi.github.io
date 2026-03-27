@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manialink>
+  <label posn="-48 50 0" text="Henry's Site" style="TextTitle1" />
+  <quad posn="-50 40 0" sizen="100 80" style="Bgs1" substyle="BgWindow2"/>
+  <label posn="-48 0 1" text="This is my manialink. I hope you like it." />
+  <quad posn="0 0 1" sizen="160 90" image="http://yourserver.com/background.jpg"/>
+</manialink>
