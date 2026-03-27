@@ -3,6 +3,9 @@
   <label posn="-48 46 0" text="Henry's Site" style="TextTitle1" />
   <quad posn="-50 42 0" sizen="100 80" style="Bgs1" substyle="BgWindow2"/>
   <label posn="-48 40 1" text="This is my manialink. I hope you like it." />
+  <label posn="-48 35 1" text="This is my manialink. I hope you like it." />
+
+  <!-- buttons -->
   <quad posn="-48 -27.75 1" sizen="22 7.75" image="http://henryvaniersel.ca/clutter/assets/socialism.png"/>
   <quad posn="-26 -27.75 1" sizen="22 7.75" image="http://henryvaniersel.ca/clutter/assets/88x31-dark.png"/>
   <quad posn="-4 -27.75 1" sizen="22 7.75" image="http://henryvaniersel.ca/clutter/assets/pngs/can.png"/>
@@ -13,4 +16,19 @@
   <quad posn="18 -20 1" sizen="22 7.75" image="http://henryvaniersel.ca/clutter/assets/pngs/onion.png"/>
   <quad posn="-48 -12.25 1" sizen="22 7.75" image="http://henryvaniersel.ca/clutter/assets/pngs/tildeclub.png"/>
   <quad posn="-26 -12.25 1" sizen="22 7.75" image="http://henryvaniersel.ca/clutter/assets/pngs/vim.png"/>
+
+  <!-- background -->
+  <quad posn="-64 64 -32" sizen="160 120" image="http://154.20.122.189/Trackmania/bg.png"/>
+  <quad posn="-67 64 -31" sizen="170 120" style="Bgs1" substyle="BgWindow2" opacity="0.5"/>
+
+  <!-- webring -->
+  <frame posn="-14.5 7 30">
+    <quad posn="-2 2 -2" sizen="29 14" style="Bgs1" substyle="BgWindow2"/>
+    <quad posn="0 0 0" sizen="25 5" style="Bgs1" substyle="BgButton"/>
+    <label posn="2.3 -1.1 0" sizen="50 10" text="$000Trackmania Webring!"/>
+    <quad posn="0 -5 0" sizen="12.1 5" manialink="http://ggx404.com" style="Bgs1" substyle="BgCard2"/>
+    <label posn="3 -6.1 0" sizen="50 10" text="$000Chase"/>
+    <quad posn="12.7 -5 0" sizen="12.1 5" manialink="http://154.20.122.189/Trackmania/main.xml" style="Bgs1" substyle="BgCard2"/>
+    <label posn="15.5 -6.1 0" sizen="50 10" text="$000Gavriil"/>
+  </frame>
 </manialink>
