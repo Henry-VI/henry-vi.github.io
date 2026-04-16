@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countdown</title>
+  </head>
+  <body>
+    <div id="countdown">00:00:00:00</div>
+    <div style="margin-top: auto;"><a href="https://henryvaniersel.ca">Home</a></div>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+:root {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+#countdown {
+  font-size: 8em;
+  font-weight: bold;
+  font-family: Bungee, sans-serif;
+  margin-top: auto;
+}
+    </style>
+    <script>
+      // steal code from w3schools
+      // Set the date we're counting down to
+var countDownDate = new Date("2026-06-26T15:10:00-07:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24)) - 1;
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = (days + "").padStart(2, "0") + ":" + (hours + "").padStart(2, "0") + ":" + (minutes + "").padStart(2, "0") + ":" + (seconds + "").padStart(2, "0");
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+    </script>
+  </body>
+</html>
