@@ -29,42 +29,19 @@ a {
       <p>tenpo kama la o lukin sin e lipu+pini</p>
       <p><b><a href="index.html">toki [insa.li:] zz<span style="font-family: 'serif'">(English)</span></a></b></p>
     </div>
-    <style>
-  .bg {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    padding:0.5em;
-    box-sizing:border-box;
-    position:relative;
-    background:url('https://sike.pona.la/assets/sike-pona-carpet.png') repeat;
-  }
-  .bg::before {
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:url('https://sike.pona.la/assets/sike-pona-carpet.png') repeat;
-    filter:blur(3px);
-  }
-  .bg > * {
-    position:relative;
-  }
-</style>
-
-<div class="bg">
-  <a href="https://sike.pona.la/jan/jan Enwi/prev.html">
-    <img src="https://sike.pona.la/assets/sike-pona-arrow.png">
-  </a>
-  <a href="https://sike.pona.la/">
-    <img src="https://sike.pona.la/assets/sike-pona-text.png">
-  </a>
-  <a href="https://sike.pona.la/jan/jan Enwi/next.html">
-    <img src="https://sike.pona.la/assets/sike-pona-arrow.png">
-  </a>
+<div id="sike-pona" style="width: 100%; height: 3rem;">
+  <link rel="stylesheet" href="https://sike.pona.la/embed.css"/>
+  <span id="left">
+    <a href="https://sike.pona.la/jan/NIMI_SINA/prev.html" id="prev">← prev</a>
+    </span>
+  <span id="mid"><a href="https://sike.pona.la">
+    <img class="tokipona" src="https://sike.pona.la/assets/tokipona.svg"></img>
+    sike pona
+    <img class="tokipona" src="https://sike.pona.la/assets/tokipona.svg"></img>
+  </a></span>
+  <span id="right">
+  <a href="https://sike.pona.la/jan/NIMI_SINA/next.html" id="next">next →</a>
+  </span>
 </div>
   </body>
 </html>
