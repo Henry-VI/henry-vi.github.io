@@ -28,7 +28,7 @@
     <label posn="2.3 -1.1 0" sizen="50 10" text="$000Trackmania Webring!"/>
     <quad posn="0 -5 0" sizen="12.1 5" manialink="http://ggx404.com" style="Bgs1" substyle="BgCard2"/>
     <label posn="3 -6.1 0" sizen="50 10" text="$000Chase"/>
-    <quad posn="12.7 -5 0" sizen="12.1 5" manialink="http://154.5.218.72/Trackmania/main.xml" style="Bgs1" substyle="BgCard2"/>
+    <quad posn="12.7 -5 0" sizen="12.1 5" manialink="http://gavriil.ca/Trackmania/main.php" style="Bgs1" substyle="BgCard2"/>
     <label posn="15.5 -6.1 0" sizen="50 10" text="$000Gavriil"/>
   </frame>
 </manialink>
